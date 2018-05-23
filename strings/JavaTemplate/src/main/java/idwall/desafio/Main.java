@@ -4,7 +4,7 @@ import idwall.desafio.string.IdwallFormatter;
 import idwall.desafio.string.StringFormatter;
 
 /**
- * Created by Rodrigo Cat√£o Araujo on 06/02/2018.
+ * Created by Rodrigo Cat„o Araujo on 06/02/2018.
  */
 public class Main {
 
@@ -41,8 +41,8 @@ public class Main {
         System.out.println("=========================");
 
         // Run IdwallFormatter
-        final StringFormatter sf = new IdwallFormatter();
-        String outputText = sf.format(text);
+        final StringFormatter sf = new IdwallFormatter(limit);
+        String outputText = sf.format(text, justify);
 
         // Print output text
         System.out.println("Output: ");

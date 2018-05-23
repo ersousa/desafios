@@ -1,14 +1,14 @@
 package idwall.desafio.string;
 
 /**
- * Created by Rodrigo Cat√£o Araujo on 06/02/2018.
+ * Created by Rodrigo Cat„o Araujo on 06/02/2018.
  */
 public abstract class StringFormatter {
 
     private Integer limit;
 
-    public StringFormatter() {
-        this.limit = 40;
+    public StringFormatter(Integer limit) {
+        this.limit = limit;
     }
 
     /**
@@ -17,8 +17,8 @@ public abstract class StringFormatter {
      * @param text
      * @return
      */
-    public abstract String format(String text);
-    
+    public abstract String format(String text, Boolean isJystify);
+
     public Integer getLimit() {
     	return this.limit;
     }
